@@ -15,6 +15,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
       .close {
         color: #aaaaaa;
@@ -30,25 +34,24 @@
         cursor: pointer;
       }
 
-      .card{
+      .card {
         border-radius: 1em;
         text-align: center;
         padding: 1em;
       }
-      
-      .modal{
+
+      .modal {
         text-align: left;
       }
 
       .card:hover {
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(0, 0, 0, 0.1);
       }
       .card img {
         border-radius: 50%;
         width: 60%;
         margin: auto;
       }
-
     </style>
   </head>
   <body>
@@ -318,7 +321,8 @@
                         під вашим фото або залишив коментар)
                       </li>
                       <li>
-                        альбоми (можливість публікувати кілька фото в одному пості та гортати їх)
+                        альбоми (можливість публікувати кілька фото в одному
+                        пості та гортати їх)
                       </li>
                     </ul>
                   </div>
@@ -352,12 +356,16 @@
     <script>
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function (event) {
-        if (event.target == modal_three || event.target == modal_two || event.target == modal) {
+        if (
+          event.target == modal_three ||
+          event.target == modal_two ||
+          event.target == modal
+        ) {
           modal_three.style.display = "none";
           modal_two.style.display = "none";
           modal.style.display = "none";
         }
-    };
+      };
     </script>
   </body>
 </html>
